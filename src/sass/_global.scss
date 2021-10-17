@@ -36,8 +36,7 @@ hr.light {
 
 // Page section padding
 .page-section {
-	padding: 10rem 0;
-	height: 100vh;
+	padding: 5rem 0;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -50,18 +49,23 @@ hr.light {
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
+	min-height: 100vh;
+
+	@include media-breakpoint-up(lg) {
+		padding: 10rem 0;
+	}
 }
 
 .img-1 {
-	background: linear-gradient(to bottom, #{fade-out($black, .5)} 0%,#{fade-out($black, .5)} 100%), url('../images/erin-webster-hair-salon-2.jpg');
+	background-image: linear-gradient(to bottom, #{fade-out($black, .6)} 0%,#{fade-out($black, .3)} 100%), url('../images/erin-webster-hair-salon-2.jpg');
 }
 
 .img-2 {
-	background: linear-gradient(to bottom, #{fade-out($black, .5)} 0%,#{fade-out($black, .5)} 100%), url('../images/erin-webster-hair-salon-3.jpg');
+	background-image: linear-gradient(to bottom, #{fade-out($black, .6)} 0%,#{fade-out($black, .3)} 100%), url('../images/erin-webster-hair-salon-3.jpg');
 }
 
 .img-brushes {
-	background: linear-gradient(to bottom, #{fade-out($black, .5)} 0%,#{fade-out($black, .5)} 100%), url('../images/erins-hair-salon-dallas-brushes.jpg');
+	background-image: linear-gradient(to bottom, #{fade-out($black, .6)} 0%,#{fade-out($black, .3)} 100%), url('../images/erins-hair-salon-dallas-brushes.jpg');
 }
 
 .icon {
