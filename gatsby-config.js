@@ -26,15 +26,18 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ['Merriweather:400,300,300italic,400italic,700,700italic', 'Merriweather+Sans:400,700']
-        }
-      }
+          families: [
+            "Merriweather:400,300,300italic,400italic,700,700italic",
+            "Merriweather+Sans:400,700",
+          ],
+        },
+      },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: "gatsby-plugin-google-analytics",
       options: {
         // The property ID; the tracking code won't be generated without it
         trackingId: "UA-17959054-1",
